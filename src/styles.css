@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --light-gray-color: hsl(217, 12%, 63%);
+  --medium-grey-color: hsl(218, 12%, 26%);
+  --dark-blue-color: hsl(213, 19%, 18%);
+  --darkest-blue-color: hsl(216, 12%, 8%);
+  --orange-color: hsl(25, 97%, 53%);
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  display: block;
+  background-color: var(--darkest-blue-color);
+}
+
+main {
+  height: 100vh;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#beforeRating, #afterRating {
+  width: 320px;
+  height: 320px;
+  padding: 1rem;
+  align-self: center;
+  border-radius: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: var(--dark-blue-color);
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-gray-color);
+}
+
+.iconContainer, .imageContainer {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.iconContainer .iconStar, .imageContainer .iconStar {
+  background-color: var(--medium-grey-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.iconContainer .imgScore, .imageContainer .imgScore {
+  padding: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.askingUser {
+  text-align: left;
+  margin: 0;
+}
+
+.thankingUser {
+  text-align: center;
+  margin: 0;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text.bigger {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--white-color);
+}
+.text.emphasis {
+  color: var(--orange-color);
+  background-color: var(--medium-grey-color);
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 25px;
+}
+
+.scoreSelected {
+  margin: 0 0rem 1rem 0;
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.btn {
+  border: 0;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--medium-grey-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+.btn.btnSbmt {
+  margin-top: 0.5rem;
+  background-color: var(--orange-color);
+  width: 90%;
+  border-radius: 25px;
+  height: 50px;
+}
+.btn.btnSbmt:hover {
+  background-color: var(--white-color);
+  color: var(--orange-color);
+}
+
+.btnActive {
+  background-color: var(--light-gray-color);
+  color: var(--white-color);
+}
